@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Manage &amp; Update — Jiawei Yang</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/academic.css">
+</head>
+<body>
+  <main class="academic-page management-page">
+    <header class="profile-card management-header">
+      <a class="back-link" href="/">← Back to homepage</a>
+      <p class="site-kicker">GITHUB PAGES</p>
+      <h1>Manage &amp; update the website</h1>
+      <p>Sign in to the GitHub account that owns this repository, then use the links below. The website normally updates within a few minutes after each commit.</p>
+    </header>
+
+    <section class="profile-card management-step">
+      <span class="step-number">01</span>
+      <div>
+        <h2>Edit profile information</h2>
+        <p>Update the name, homepage heading, short biography, and email address, then commit the change on GitHub.</p>
+        <a class="action-link" href="https://github.com/yjw05/yjw05.github.io/edit/main/profile.json" target="_blank" rel="noreferrer">Open the profile editor →</a>
+      </div>
+    </section>
+
+    <section class="profile-card management-step">
+      <span class="step-number">02</span>
+      <div>
+        <h2>Upload a paper PDF</h2>
+        <p>Upload the PDF to the repository root. Use only letters, numbers, and hyphens in its filename, for example <code>my-paper-2026.pdf</code>.</p>
+        <a class="action-link" href="https://github.com/yjw05/yjw05.github.io/upload/main" target="_blank" rel="noreferrer">Upload a PDF →</a>
+      </div>
+    </section>
+
+    <section class="profile-card management-step">
+      <span class="step-number">03</span>
+      <div>
+        <h2>Add a paper to the homepage</h2>
+        <p>Add its title, authors, year, PDF path, and abstract to the <code>preprints</code> list.</p>
+        <a class="action-link" href="https://github.com/yjw05/yjw05.github.io/edit/main/papers.json" target="_blank" rel="noreferrer">Edit the preprint list →</a>
+        <details>
+          <summary>View an example paper entry</summary>
+          <pre><code>{
+  "title": "Full paper title",
+  "authors": "Jiawei Yang, A. Collaborator",
+  "year": "2026",
+  "venue": "Preprint",
+  "pages": "11 pages",
+  "pdf": "/my-paper-2026.pdf",
+  "url": "https://arxiv.org/abs/xxxx.xxxxx",
+  "note": "",
+  "abstract": "Paper abstract"
+}</code></pre>
+        </details>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <span>Only GitHub users with write access can save changes.</span>
+      <a href="https://github.com/yjw05/yjw05.github.io" target="_blank" rel="noreferrer">View repository</a>
+    </footer>
+  </main>
+</body>
+</html>

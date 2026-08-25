@@ -1,0 +1,15 @@
+{
+  "preprints": [
+    {
+      "title": "The Arthur-Packet Support Equality for Real Reductive Groups",
+      "authors": "Jiawei Yang",
+      "year": "2026",
+      "venue": "Preprint",
+      "pages": "11 pages",
+      "pdf": "/arthur-packet-support-equality.pdf",
+      "url": "",
+      "note": "",
+      "abstract": "Let ψ be a real Arthur parameter and let ψ₂ be the unipotent parameter in a fixed Jordan decomposition. Adams-Ionov-Mason-Brown-Vogan proved that the microlocal packet of ψ is contained in the support of the two-step Jordan induction of the packet of ψ₂, and conjectured equality. We prove the reverse inclusion. The argument first passes to a sufficiently positive translate, where the relevant ABV spaces have a common flag-variety model. Perverse dévissage reduces the problem to a singular-support implication, which follows from the incidence calculation underlying the AIMV microstalk comparison. Coherent continuation for individual packet members then returns the result to the original parameter."
+    }
+  ]
+}

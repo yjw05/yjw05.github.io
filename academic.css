@@ -1,0 +1,281 @@
+:root {
+  --page: #f7f7f5;
+  --card: #ffffff;
+  --ink: #213d3d;
+  --heading: #151b1b;
+  --muted: #6b7d7b;
+  --link: #1649d8;
+  --line: #e8ecea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--page);
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: Arial, Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #0d2f9a;
+}
+
+.academic-page {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 28px 18px 52px;
+}
+
+.profile-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  box-shadow: 0 2px 9px rgba(20, 45, 43, 0.07);
+  margin-bottom: 12px;
+  padding: 24px 22px;
+}
+
+.intro-card {
+  padding-bottom: 28px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.site-kicker {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  margin: 0 0 12px;
+}
+
+h1 {
+  color: var(--heading);
+  font-size: clamp(22px, 4vw, 30px);
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.headline-subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 14px 0 0;
+}
+
+h2 {
+  color: var(--ink);
+  font-size: 17px;
+  margin: 0 0 15px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 19px;
+}
+
+li {
+  font-size: 14px;
+  line-height: 1.48;
+  margin: 3px 0;
+}
+
+.paper-section {
+  padding-bottom: 27px;
+  padding-top: 27px;
+}
+
+.paper-list li {
+  margin-bottom: 13px;
+}
+
+.paper-list li:last-child {
+  margin-bottom: 0;
+}
+
+.paper-title,
+.paper-authors,
+.paper-meta {
+  display: block;
+}
+
+.paper-title {
+  color: var(--heading);
+  font-weight: 650;
+}
+
+.paper-authors {
+  margin-top: 2px;
+}
+
+.paper-meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.paper-abstract {
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  max-width: 68ch;
+}
+
+.paper-abstract-details {
+  border-top: 0;
+  margin-top: 10px;
+  padding-top: 0;
+}
+
+.paper-abstract-details summary {
+  display: list-item;
+  font-size: 13px;
+  width: max-content;
+}
+
+.empty-state {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.page-footer {
+  color: var(--muted);
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  padding: 13px 4px 0;
+}
+
+.page-footer nav {
+  display: flex;
+  gap: 6px;
+}
+
+.management-header p:last-child,
+.management-step p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.management-header .site-kicker {
+  margin-top: 22px;
+}
+
+.back-link {
+  font-size: 12px;
+}
+
+.management-step {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 42px minmax(0, 1fr);
+}
+
+.management-step h2 {
+  margin-bottom: 7px;
+}
+
+.management-step p {
+  margin: 0 0 12px;
+}
+
+.step-number {
+  color: #9aaaa7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding-top: 3px;
+}
+
+.action-link {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+code {
+  background: #f0f3f2;
+  border-radius: 4px;
+  color: var(--heading);
+  padding: 2px 5px;
+}
+
+details {
+  border-top: 1px solid var(--line);
+  margin-top: 18px;
+  padding-top: 13px;
+}
+
+summary {
+  color: var(--link);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+pre {
+  background: #f4f6f5;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.55;
+  margin: 12px 0 0;
+  overflow-x: auto;
+  padding: 13px;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(22, 73, 216, 0.25);
+  outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .academic-page {
+    padding: 12px 9px 35px;
+  }
+
+  .profile-card {
+    border-radius: 8px;
+    padding: 21px 16px;
+  }
+
+  .intro-card {
+    padding-bottom: 24px;
+    padding-top: 25px;
+  }
+
+  li {
+    font-size: 13px;
+  }
+
+  .page-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .management-step {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+}

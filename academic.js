@@ -79,8 +79,8 @@
       var details = [paper.venue, paper.year, paper.pages].filter(Boolean);
       if (details.length) meta.appendChild(document.createTextNode(details.join(' · ')));
 
-      appendLink(meta, paper.pdf, 'Download PDF', details.length > 0);
-      appendLink(meta, paper.url, 'External link', details.length > 0 || Boolean(paper.pdf));
+      appendLink(meta, paper.pdf, 'PDF', details.length > 0);
+      appendLink(meta, paper.url, 'arXiv', details.length > 0 || Boolean(paper.pdf));
       if (paper.note) {
         if (meta.childNodes.length) meta.appendChild(document.createTextNode(' · '));
         meta.appendChild(document.createTextNode(paper.note));

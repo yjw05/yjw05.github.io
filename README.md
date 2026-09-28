@@ -1,6 +1,6 @@
 # Jiawei Yang — Mathematics Homepage
 
-This is the source repository for `https://yjw05.github.io`. The website is hosted directly by GitHub Pages and does not depend on ChatGPT.
+This is the source repository for `https://yjw05.github.io`. The website is hosted directly by GitHub Pages.
 
 ## Edit profile information
 

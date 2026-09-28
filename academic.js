@@ -26,7 +26,7 @@
     setText('headline-subtitle', profile.headlineSubtitle);
 
     if (profile.name) {
-      document.title = profile.name + ' — Mathematics Homepage';
+      document.title = profile.name + ' (杨嘉维) — Mathematics at Xiamen University';
     }
 
     var list = document.getElementById('about-list');

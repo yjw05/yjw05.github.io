@@ -5,8 +5,8 @@
   if (yearNode) yearNode.textContent = String(new Date().getFullYear());
 
   Promise.all([
-    fetch('/profile.json').then(checkResponse),
-    fetch('/papers.json').then(checkResponse)
+    fetch('/profile.json?v=20260929').then(checkResponse),
+    fetch('/papers.json?v=20260929').then(checkResponse)
   ])
     .then(function (results) {
       renderProfile(results[0]);
@@ -71,7 +71,7 @@
       if (!paper || !paper.title) return;
 
       var item = document.createElement('li');
-      appendText(item, 'paper-title', paper.title);
+      appendPaperTitle(item, paper);
       appendText(item, 'paper-authors', paper.authors || '');
 
       var meta = document.createElement('span');
@@ -114,6 +114,14 @@
     var node = document.createElement('span');
     node.className = className;
     node.textContent = value;
+    parent.appendChild(node);
+  }
+
+  function appendPaperTitle(parent, paper) {
+    var node = document.createElement(paper.page ? 'a' : 'span');
+    node.className = 'paper-title';
+    node.textContent = paper.title;
+    if (paper.page) node.href = paper.page;
     parent.appendChild(node);
   }
 

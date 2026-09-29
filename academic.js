@@ -6,7 +6,7 @@
 
   Promise.all([
     fetch('/profile.json?v=20260929').then(checkResponse),
-    fetch('/papers.json?v=20260929').then(checkResponse)
+    fetch('/papers.json?v=20260929-2').then(checkResponse)
   ])
     .then(function (results) {
       renderProfile(results[0]);
@@ -76,7 +76,7 @@
 
       var meta = document.createElement('span');
       meta.className = 'paper-meta';
-      var details = [paper.venue, paper.year, paper.pages].filter(Boolean);
+      var details = [paper.venue, paper.uploaded || paper.year, paper.pages].filter(Boolean);
       if (details.length) meta.appendChild(document.createTextNode(details.join(' · ')));
 
       appendLink(meta, paper.pdf, 'PDF', details.length > 0);

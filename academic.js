@@ -6,7 +6,7 @@
 
   Promise.all([
     fetch('/profile.json?v=20260929').then(checkResponse),
-    fetch('/papers.json?v=20261006').then(checkResponse)
+    fetch('/papers.json?v=20261006-2').then(checkResponse)
   ])
     .then(function (results) {
       renderProfile(results[0]);

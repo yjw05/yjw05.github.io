@@ -1,6 +1,18 @@
 {
   "preprints": [
     {
+      "title": "Dense Non-Archimedean Entire Curves on Kummer Surfaces",
+      "authors": "Jiawei Yang",
+      "year": "2026",
+      "uploaded": "First posted October 6, 2026",
+      "venue": "Preprint",
+      "pages": "5 pages",
+      "page": "/papers/dense-non-archimedean-entire-curves-kummer-surfaces.html",
+      "pdf": "/dense-non-archimedean-entire-curves-kummer-surfaces.pdf",
+      "note": "",
+      "abstract": "For every prime p, we construct a smooth projective Kummer K3 surface over C_p admitting a Zariski-dense analytic map from the entire analytic line. The construction gives counterexamples to Garcia-Fritz and Pasten's conjecture [GFP25, Conjecture 1.8], since these surfaces have Kodaira dimension zero."
+    },
+    {
       "title": "The Arthur-Packet Support Equality for Real Reductive Groups",
       "authors": "Jiawei Yang",
       "year": "2026",

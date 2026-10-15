@@ -4,9 +4,16 @@
   var yearNode = document.getElementById('updated-year');
   if (yearNode) yearNode.textContent = String(new Date().getFullYear());
 
+  document.addEventListener('toggle', function (event) {
+    var details = event.target;
+    if (details && details.matches && details.matches('.paper-abstract-details') && details.open) {
+      typesetMath(details);
+    }
+  }, true);
+
   Promise.all([
     fetch('/profile.json?v=20260929').then(checkResponse),
-    fetch('/papers.json?v=20261015').then(checkResponse)
+    fetch('/papers.json?v=20261015-2').then(checkResponse)
   ])
     .then(function (results) {
       renderProfile(results[0]);
@@ -55,12 +62,14 @@
     var container = document.getElementById(containerId);
     if (!container) return;
 
+    clearMath(container);
     container.replaceChildren();
     if (!Array.isArray(papers) || papers.length === 0) {
       var empty = document.createElement('p');
       empty.className = 'empty-state';
       empty.textContent = 'No preprints listed yet.';
       container.appendChild(empty);
+      typesetMath(container);
       return;
     }
 
@@ -103,6 +112,21 @@
     });
 
     container.appendChild(list);
+    typesetMath(container);
+  }
+
+  function clearMath(container) {
+    if (window.MathJax && typeof window.MathJax.typesetClear === 'function') {
+      window.MathJax.typesetClear([container]);
+    }
+  }
+
+  function typesetMath(container) {
+    if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+      window.MathJax.typesetPromise([container]).catch(function () {
+        // Keep readable LaTeX source if typesetting is unavailable.
+      });
+    }
   }
 
   function setText(id, value) {

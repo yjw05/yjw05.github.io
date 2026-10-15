@@ -10,7 +10,7 @@
       "page": "/papers/projective-decomposition-intersection-cohomology-rigid-spaces.html",
       "pdf": "/projective-decomposition-intersection-cohomology-rigid-spaces.pdf",
       "note": "",
-      "abstract": "We prove the decomposition theorem for projective morphisms of rigid analytic spaces over p-adic fields, with Q_l-coefficients for every prime l, including l = p. The proof combines simultaneous algebraic approximation with a controlled restriction of perverse sheaves along analytic graphs, using vanishing cycles, Gysin duality, and comparison between coefficient primes. As an application, we show that the p-adic intersection cohomology of every proper rigid analytic space is de Rham. We also establish an independent criterion for de Rham intersection cohomology with local coefficients in terms of the dimension of the boundary, yielding further results for curves, surfaces, and finite covers."
+      "abstract": "We prove the decomposition theorem for projective morphisms of rigid analytic spaces over \\(p\\)-adic fields, with \\(\\mathbf{Q}_{\\ell}\\)-coefficients for every prime \\(\\ell\\), including \\(\\ell=p\\). The proof combines simultaneous algebraic approximation with a controlled restriction of perverse sheaves along analytic graphs, using vanishing cycles, Gysin duality, and comparison between coefficient primes. As an application, we show that the \\(p\\)-adic intersection cohomology of every proper rigid analytic space is de Rham. We also establish an independent criterion for de Rham intersection cohomology with local coefficients in terms of the dimension of the boundary, yielding further results for curves, surfaces, and finite covers."
     },
     {
       "title": "Dense Non-Archimedean Entire Curves on Kummer Surfaces",
@@ -22,10 +22,10 @@
       "page": "/papers/dense-non-archimedean-entire-curves-kummer-surfaces.html",
       "pdf": "/dense-non-archimedean-entire-curves-kummer-surfaces.pdf",
       "note": "",
-      "abstract": "For every prime p, we construct a smooth projective Kummer K3 surface over C_p admitting a Zariski-dense analytic map from the entire analytic line. The construction gives counterexamples to Garcia-Fritz and Pasten's conjecture [GFP25, Conjecture 1.8], since these surfaces have Kodaira dimension zero."
+      "abstract": "For every prime \\(p\\), we construct a smooth projective Kummer K3 surface over \\(C_p\\) admitting a Zariski-dense analytic map from the entire analytic line. The construction gives counterexamples to Garcia-Fritz and Pasten's conjecture [GFP25, Conjecture 1.8], since these surfaces have Kodaira dimension zero."
     },
     {
-      "title": "Steinness of the Basic GL_n Local Shimura Tower in Odd Rank",
+      "title": "Steinness of the Basic \\(\\mathrm{GL}_n\\) Local Shimura Tower in Odd Rank",
       "authors": "Jiawei Yang",
       "year": "2026",
       "uploaded": "First uploaded September 19, 2026",
@@ -35,7 +35,7 @@
       "pdf": "https://arxiv.org/pdf/2609.22921",
       "url": "https://arxiv.org/abs/2609.22921",
       "note": "",
-      "abstract": "We prove Steinness over Q̆ₚ for the basic local Shimura tower attached to G = GLₙ, μ = (1, 1, 0ⁿ⁻²), with basic Newton slope 2/n, for every odd n ≥ 3, at every finite level and for every prime p. The proof proceeds by constructing global analytic functions from the crystalline period map, proving compactness of their sublevel sets via a perfectoid normalization of Tate lattices, and showing that the resulting function map to affine space is finite. The key geometric inputs are the Fargues-Fontaine realization of the universal cover, a normalized determinant on the rank-two locus, and an integral PEL realization over W(F̄ₚ) used to produce bounded global Hodge generators. The integral constructions include the prime p = 2."
+      "abstract": "We prove Steinness over \\(\\breve{\\mathbf{Q}}_p\\) for the basic local Shimura tower attached to \\(G=\\mathrm{GL}_n\\), \\(\\mu=(1,1,0^{n-2})\\), with basic Newton slope \\(2/n\\), for every odd \\(n\\ge 3\\), at every finite level and for every prime \\(p\\). The proof proceeds by constructing global analytic functions from the crystalline period map, proving compactness of their sublevel sets via a perfectoid normalization of Tate lattices, and showing that the resulting function map to affine space is finite. The key geometric inputs are the Fargues-Fontaine realization of the universal cover, a normalized determinant on the rank-two locus, and an integral PEL realization over \\(W(\\overline{\\mathbf{F}}_p)\\) used to produce bounded global Hodge generators. The integral constructions include the prime \\(p=2\\)."
     },
     {
       "title": "The Arthur-Packet Support Equality for Real Reductive Groups",
@@ -48,7 +48,7 @@
       "pdf": "https://arxiv.org/pdf/2609.19197",
       "url": "https://arxiv.org/abs/2609.19197",
       "note": "",
-      "abstract": "Let ψ be a real Arthur parameter and let ψ₂ be the unipotent parameter in a fixed Jordan decomposition. Adams, Ionov, Mason-Brown, and Vogan proved that the microlocal packet of ψ is contained in the support of the two-step Jordan induction of the packet of ψ₂, and conjectured equality. We prove the reverse inclusion. The argument first passes to a sufficiently positive translate, where the relevant connected components of the ABV spaces have a common flag-variety model. Perverse dévissage reduces the problem to a singular-support implication, which follows from the incidence calculation underlying the AIMV microstalk comparison. Coherent continuation for individual packet members then returns the result to the original parameter."
+      "abstract": "Let \\(\\psi\\) be a real Arthur parameter and let \\(\\psi_2\\) be the unipotent parameter in a fixed Jordan decomposition. Adams, Ionov, Mason-Brown, and Vogan proved that the microlocal packet of \\(\\psi\\) is contained in the support of the two-step Jordan induction of the packet of \\(\\psi_2\\), and conjectured equality. We prove the reverse inclusion. The argument first passes to a sufficiently positive translate, where the relevant connected components of the ABV spaces have a common flag-variety model. Perverse dévissage reduces the problem to a singular-support implication, which follows from the incidence calculation underlying the AIMV microstalk comparison. Coherent continuation for individual packet members then returns the result to the original parameter."
     }
   ]
 }

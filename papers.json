@@ -1,6 +1,18 @@
 {
   "preprints": [
     {
+      "title": "Hecke Actions and Pure Inner Forms in Families of Real Langlands Parameters",
+      "authors": "Minghua Dou and Jiawei Yang",
+      "year": "2026",
+      "uploaded": "First posted November 25, 2026",
+      "venue": "Preprint",
+      "pages": "129 pages",
+      "page": "/papers/hecke-actions-pure-inner-forms-real-langlands.html",
+      "pdf": "/hecke-actions-pure-inner-forms-real-langlands.pdf",
+      "source": "/hecke-actions-pure-inner-forms-real-langlands-source.zip",
+      "abstract": "Let \\(H\\) be a connected quasi-split real reductive group. We construct, on the stack of flagged Langlands parameters, a compact object for each pure inner form of \\(H\\). Its finite Hecke translates generate a summand of the periodic coherent category. These summands are mutually orthogonal and exhaust the category over the entire marked Cartan.\n\nFor each quasi-split form the corresponding summand is equivalent, as a finite Hecke module, to the periodic category of sheaves with nilpotent singular support on its enhanced real flag quotient. For a complex group regarded as real, the comparison is monoidal. For the full pure inner class we prove the equivalence on the open set where the roots taking value one span a space of rank at most one. It holds everywhere if each pure inner form is quasi-split or compact modulo its center. The comparisons preserve the marked parameter and the original boundary circle class.\n\nFor every pure inner form we also compute the maps from an arbitrary standard Hecke translate to its closed generator. The nonzero terms are lines on a finite cover of the norm torus. Their shifts and both Cartan actions agree with those on the real flag variety."
+    },
+    {
       "title": "Projective Decomposition and Intersection Cohomology of Rigid Spaces",
       "authors": "Jiawei Yang",
       "year": "2026",

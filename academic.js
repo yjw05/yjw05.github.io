@@ -13,7 +13,7 @@
 
   Promise.all([
     fetch('/profile.json?v=20260929').then(checkResponse),
-    fetch('/papers.json?v=20261015-2').then(checkResponse)
+    fetch('/papers.json?v=20261125').then(checkResponse)
   ])
     .then(function (results) {
       renderProfile(results[0]);
@@ -90,6 +90,7 @@
 
       appendLink(meta, paper.pdf, 'PDF', details.length > 0);
       appendLink(meta, paper.url, 'arXiv', details.length > 0 || Boolean(paper.pdf));
+      appendLink(meta, paper.source, 'Source (ZIP)', meta.childNodes.length > 0);
       if (paper.note) {
         if (meta.childNodes.length) meta.appendChild(document.createTextNode(' · '));
         meta.appendChild(document.createTextNode(paper.note));
@@ -101,11 +102,13 @@
         abstractDetails.className = 'paper-abstract-details';
         var abstractSummary = document.createElement('summary');
         abstractSummary.textContent = 'Abstract';
-        var abstract = document.createElement('p');
-        abstract.className = 'paper-abstract';
-        abstract.textContent = paper.abstract;
         abstractDetails.appendChild(abstractSummary);
-        abstractDetails.appendChild(abstract);
+        paper.abstract.split(/\n\s*\n/).forEach(function (paragraph) {
+          var abstract = document.createElement('p');
+          abstract.className = 'paper-abstract';
+          abstract.textContent = paragraph;
+          abstractDetails.appendChild(abstract);
+        });
         item.appendChild(abstractDetails);
       }
       list.appendChild(item);

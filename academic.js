@@ -13,7 +13,7 @@
 
   Promise.all([
     fetch('/profile.json?v=20260929').then(checkResponse),
-    fetch('/papers.json?v=20261125').then(checkResponse)
+    fetch('/papers.json?v=20261126').then(checkResponse)
   ])
     .then(function (results) {
       renderProfile(results[0]);
@@ -90,6 +90,7 @@
 
       appendLink(meta, paper.pdf, 'PDF', details.length > 0);
       appendLink(meta, paper.url, 'arXiv', details.length > 0 || Boolean(paper.pdf));
+      appendLink(meta, paper.hexagon, 'Hexagon', meta.childNodes.length > 0);
       appendLink(meta, paper.source, 'Source (ZIP)', meta.childNodes.length > 0);
       if (paper.note) {
         if (meta.childNodes.length) meta.appendChild(document.createTextNode(' · '));
